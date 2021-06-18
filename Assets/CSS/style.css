@@ -28,6 +28,7 @@ h1 {
 
 h2 {
     color: rgb(255, 115, 115);
+    text-align: center;
 }
 
 form {
@@ -171,6 +172,7 @@ button:hover {
     margin: auto;
     background-color: transparent;
     justify-content: center;
+    text-align: center;
     align-items: center;
     padding: 30px;
     border: solid rgb(189, 189, 189) 2px;
@@ -192,6 +194,45 @@ img {
 .results button {
     width: 90%;
     margin-top: 30px;
+}
+
+@media screen and (max-width: 576px) {
+    .logo-container {
+        width: 100px;
+        margin-left: 10px;
+    }
+
+    .answer {
+        width: 100%;
+    }
+
+    .questions {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #questionName {
+        font-size: 1rem;
+    }
+
+    .status {
+        display: none;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .responsive {
+        width: 90%;
+        margin: auto;
+        margin-top: 4px;
+        margin-bottom: 4px;
+        
+    }
+    
+    #reaction {
+        width: 95%;
+    }
 }
 
 
