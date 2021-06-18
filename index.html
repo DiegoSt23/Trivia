@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia Diego</title>
+    <link rel="stylesheet" href="./Assets/CSS/style.css">
+    <link rel="icon" href="./Assets/Images/favicon.png" sizes="32x32" type="image/png">
+</head>
+<body>
+    <div class="logo-container">
+        <img src="./Assets/Images/logo red.png" alt="logo" class="logo">
+    </div>
+    <h1>TRIVIA</h1>
+    <form action="" id="trivia">
+        <h2>SET UP YOUR GAME</h2>
+        <div class="question-field">
+            <label for="amount">Question Amount</label>
+            <input type="number" id="questionAmount" min="4" max="10" class="amount" value="10"/>
+        </div>
+        <div class="question-field">
+            <label for="category">Category</label>
+            <select name="" id="category">
+                <option value="0">Random</option>
+                <option value="9">Cultura general</option>
+                <option value="10">Libros</option>
+                <option value="11">Películas</option>
+                <option value="12">Música</option>
+                <option value="13">Musicales y teatros</option>
+                <option value="14">Televisión</option>
+                <option value="15">Videojuegos</option>
+                <option value="16">Juegos de mesa</option>
+                <option value="17">Ciencia y naturaleza</option>
+                <option value="18">Computación</option>
+                <option value="19">Matemáticas</option>
+                <option value="20">Mitología</option>
+                <option value="21">Deportes</option>
+                <option value="22">Geografía</option>
+                <option value="23">Historia</option>
+                <option value="24">Política</option>
+                <option value="25">Arte</option>
+                <option value="26">Celebridades</option>
+                <option value="27">Animales</option>
+                <option value="28">Autos</option>
+                <option value="29">Comics</option>
+                <option value="30">Gadgets</option>
+                <option value="31">Ánime y manga</option>
+                <option value="32">Caricaturas</option>
+            </select>
+        </div>
+        <div class="question-field">
+            <label for="difficulty">Difficulty</label>
+            <select name="" id="difficulty">
+                <option value="0">Random</option>
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+        </div>
+        <div class="question-field">
+            <label for="type">Question Type</label>
+            <select name="" id="questionType">
+                <option value="0">Random</option>
+                <option value="multiple">Multiple Option</option>
+                <option value="boolean">True / False</option>
+            </select>
+        </div>
+        <input type="submit" class="start" value="START"/>    
+    </form>
+
+    <div class="questions-container" id="questionContainer">
+        <p id="questionName"></p>
+        <div class="questions">
+            <button id="1" type="button" class="answer"></button>
+            <button id="2" type="button" class="answer"></button>
+            <button id="3" type="button" class="answer"></button>
+            <button id="4" type="button" class="answer"></button>        
+        </div>
+    </div>
+
+    <div class = "status" id="status">
+        <div>
+            <span>Progress: </span><span id="question-index"></span> / <span id="num-questions"></span>
+        </div>
+        <div>
+            <span>Category: </span><span id ="category-name"></span>
+        </div>
+        <div>
+            <span>Difficulty: </span><span id="difficulty-name"></span>
+        </div>        
+    </div>
+            
+    <div class="results" id="resultsCard">
+        <h2>YOUR SCORE</h2>
+        <h3 id="score"></h3>
+        <img alt="reaction" id="reaction">
+        <p id="message"></p>
+        <button id="anotherTry">ANOTHER TRY?</button>
+    </div>
+    
+    <script src="./Assets/JS/java.js"></script>
+</body>
+</html>
