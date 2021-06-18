@@ -35,7 +35,6 @@ let getAPIdata = async e => {
     const response = await fetch(`https://opentdb.com/api.php?amount=${questionAmount.value}&category=${category.value}&difficulty=${difficulty.value}&type=${questionType.value}`);
     const data = await response.json();
     questions = data.results;
-    console.log(questions);
     startGame();
 };
 
